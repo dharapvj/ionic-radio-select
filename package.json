@@ -1,0 +1,42 @@
+{
+  "name": "ionic-radio-select",
+  "version": "0.1.0",
+  "description": "A better Ionic Select showing Radio buttons. Does show OK and Cancel buttons. Choice selection closes the Alert dialog.",
+  "main": "./dist/src/index.js",
+  "typings": "./dist/src/index.d.ts",
+  "files": "dist/src",
+  "scripts": {
+    "clean": "rimraf aot dist",
+    "ngc": "ngc",
+    "build": "npm run ngc",
+    "publishPackage": "npm run clean && npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dharapvj/ionic-radio-select.git"
+  },
+  "keywords": [],
+  "author": "Vijay Dharap <vj4tech@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dharapvj/ionic-radio-select/issues"
+  },
+  "homepage": "https://github.com/dharapvj/ionic-radio-select#readme",
+  "devDependencies": {
+    "@angular/common": "^5.2.0",
+    "@angular/compiler": "^5.2.0",
+    "@angular/compiler-cli": "^5.2.0",
+    "@angular/core": "^5.2.0",
+    "@angular/platform-browser": "^5.2.0",
+    "@angular/platform-browser-dynamic": "^5.2.0",
+    "@types/node": "^6.0.60",
+    "rimraf": "^2.6.2",
+    "rxjs": "^5.5.2",
+    "typescript": "^2.4.2",
+    "zone.js": "^0.8.26"
+  },
+  "peerDependencies": {
+    "ionic-angular": "^3.9.2",
+    "@angular/forms": "^5.2.0"
+  }
+}
