@@ -1,9 +1,13 @@
 {
   "name": "ionic-radio-select",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A better Ionic Select showing Radio buttons. Does NOT show OK and Cancel buttons. Selecting a choice closes the Alert dialog immediately.",
-  "keywords":[
-    "ionic", "ionic3","angular5","directive", "ion-select"
+  "keywords": [
+    "ionic",
+    "ionic3",
+    "angular5",
+    "directive",
+    "ion-select"
   ],
   "main": "./dist/src/index.js",
   "typings": "./dist/src/index.d.ts",
