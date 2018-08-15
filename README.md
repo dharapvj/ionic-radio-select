@@ -49,3 +49,12 @@ In your html page where you were using add `customRadio` directive to `ion-selec
   </ion-select>
 </ion-item>
 ````
+
+### How to publish new version of this library
+
+1. Make changes
+2. Commit changes
+3. `npm version <version_no>`
+3. `npm run packagr`
+3. `npm publish dist`
+3. `git push --tags origin master`
