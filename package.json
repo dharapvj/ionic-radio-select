@@ -9,7 +9,7 @@
     "clean": "rimraf aot dist",
     "ngc": "ngc",
     "build": "npm run ngc",
-    "publishPackage": "npm run clean && npm run build && npm publish"
+    "packagr": "ng-packagr -p ng-package.json"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@types/node": "^6.0.60",
+    "ng-packagr": "^4.1.0",
     "rimraf": "^2.6.2",
     "rxjs": "^5.5.2",
     "typescript": "^2.4.2",

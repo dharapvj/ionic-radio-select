@@ -11,7 +11,7 @@ export class CustomRadioDirective {
     
     @Output() overslide: any = new EventEmitter();
     
-    constructor(@Host() @Self() @Optional() public hostSel : Select) {
+    constructor(@Host() @Self() @Optional() public hostSel: Select) {
       let app = (<any>hostSel)._app;
       hostSel.open = (ev?: UIEvent) => {
         // console.log('wrapper in');
@@ -81,8 +81,10 @@ export class CustomRadioDirective {
 
         overlay.onDidDismiss(() => {
           const checkedInput = selectOptions.inputs.find(i => i.checked);
-          checkedInput.selected = true;
-          hostSel.value = checkedInput.value;
+          if(checkedInput) {
+            checkedInput.selected = true;
+            hostSel.value = checkedInput.value;
+          }
           hostSel._fireBlur();
           hostSel._overlay = undefined;
         });
