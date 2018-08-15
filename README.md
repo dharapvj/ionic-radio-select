@@ -5,8 +5,12 @@ Ionic's `ion-select` uses Alert to show Radio buttons to choose one of the item 
 This means, users needs to do total 3 taps to make one selection. This directive changes such behavior of `ion-select` and now user only needs to do 2 taps to get the selected option reflected in the select. One to open the Alert and other to select the choice.
 
 # How to use
+In your ionic application, install this library first
+````
+npm i ionic-radio-select
+````
 
-In your ionic application's page module, import `IonicCustomRadioModule`.
+In your page module, import `IonicCustomRadioModule`.
 
 ````typescript
 import { NgModule } from '@angular/core';
